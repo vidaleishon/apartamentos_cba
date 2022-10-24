@@ -6,69 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apartamentos Córdoba</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark px-3">
+            <figure class="nav_logo">
+                <a href="./index.html"><img src="./imagenes/logo.png" alt="logo Apartamentos" width="200px" /></a>
+            </figure>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtoggler"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse justify-content-end" id="navtoggler">
+                <ul class="nav_menu">
+                    <li>
+                        <a class="item" href="./pages/departamentos.html">Departamentos</a>
+                    </li>
+                    <li>
+                        <a class="item" href="./pages/galeria.html">Galeria</a>
+                    </li>
+                    <li>
+                        <a class="item" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="item" href="./pages/sobrenosotros.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-dark px-3">
-        <figure class="nav_logo">
-            <a href="./index.html"><img src="./imagenes/logo.png" alt="logo Apartamentos" width="200px" /></a>
-        </figure>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtoggler"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navtoggler">
-
-            <ul class="nav_menu">
-                <li>
-                    <a class="item" href="./pages/departamentos.html">Departamentos</a>
-                </li>
-                <li>
-                    <a class="item" href="./pages/galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a class="item" href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a class="item" href="./pages/sobrenosotros.html">Sobre nosotros</a>
-                </li>
-            </ul>
+        <div class="logo-container">
+            <img class="logo" src="./imagenes/logo.png" />
         </div>
 
-    </nav>
-
-
-
-    <div class="logo-container">
-        <img class="logo" src="./imagenes/logo.png" />
-    </div>
-
-    <div class="">
-        <div class="barra-container">
-            <span class="barra-txt">Departamentos y viviendas de alquiler temporario</span>
+        <div class="">
+            <div class="barra-container">
+                <span class="barra-txt">Departamentos y viviendas de alquiler temporario</span>
+            </div>
+            <div class="barra-container">
+                <span class="barra-txt">Administración de inmuebles</span>
+            </div>
+            <div class="barra-container">
+                <span class="barra-txt">Asesoramiento inmobiliario</span>
+            </div>
         </div>
-        <div class="barra-container">
-            <span class="barra-txt">Administración de inmuebles</span>
+
+        <div class="container">
+            <h2>
+                <img src="./imagenes/position_logo.png" width="30px" />Córdoba
+                Capital, Argentina
+            </h2>
         </div>
-        <div class="barra-container">
-            <span class="barra-txt">Asesoramiento inmobiliario</span>
-        </div>
-    </div>
 
-    <div class="container">
-        <h2>
-            <img src="./imagenes/position_logo.png" width="30px" />Córdoba
-            Capital, Argentina
-        </h2>
-    </div>
-
-
-    <script src="./js/bootstrap.bundle.js"></script>
+        <script src="./js/bootstrap.bundle.js"></script>
+    </main>
 </body>
 
 </html>

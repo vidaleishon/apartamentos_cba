@@ -46,6 +46,7 @@ nav {
   float: left;
   margin-right: 15px;
   margin-top: 16px;
+  background: #161619;
 }
 
 .nav_logo {
@@ -141,7 +142,7 @@ h4 {
   height: 30px;
 }
 
-article {
+.container {
   margin: auto;
   width: 900px;
   height: 160px;
