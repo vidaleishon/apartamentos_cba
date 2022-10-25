@@ -145,7 +145,7 @@ h4 {
 article {
   margin: auto;
   width: 900px;
-  height: 160px;
+  height: 160px, X;
   background: rgba(66, 31, 41, 0.8);
   border-radius: 43px;
 }
