@@ -12,9 +12,7 @@ img, svg {
   }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
- margin-top: 40px;
  font-weight: bold;
- line-height: 0;
 }
 
 h2, .h2 {
@@ -43,7 +41,9 @@ nav {
   display: flex;
   
   justify-content: space-between;
-  height: 75px;
+  position:fixed !important;
+  width:100%;
+  z-index: 9999;
 }
 
 .nav_menu {
@@ -56,11 +56,24 @@ nav {
   background: #161619;
 }
 
+.nav_menu li {
+  border-radius: 15px;
+  padding: 3px;
+}
+
+.nav_menu li:hover {
+  background-color: #333333c4;
+  transition: all 1s;
+}
+
 .nav_logo {
   margin-left: 15px;
   margin-top: 10px;
 }
 
+main {
+  padding-top: 120px;
+}
 
 li {
   float: left;
@@ -113,15 +126,22 @@ a {
 
 h1 {
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900;
+  background-color: #00000054;
+  border-radius: 15px;
+  padding: 20px 0px;
+  letter-spacing: 5px;
 }
 
 h2 {
   display: flex;
   justify-content: center;
   font-family: "Merriweather Sans", sans-serif;
-  height: 85px;
+  height: 40px;
   align-items: center;
+  font-weight: 900;
+  letter-spacing: 5px;
 }
 
 h3 {
@@ -155,26 +175,28 @@ article {
 }
 
 .galeria_fotos {
-  margin: auto;
-  width: 1400px, x;
-  height: 400px, x;
+  margin: 45px auto;
   background: rgba(66, 31, 41, 0.8);
   border-radius: 43px;
   padding: 30px;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
-  grid-gap: 30px;
-  }
-  
-  .galeria_fotos img {
-    width: 100%;
+
   }
 
 .imganimation:hover {
-  box-shadow: 0px 0px 27px 7px rgba(0,0,0,0.32);
--webkit-box-shadow: 0px 0px 27px 7px rgba(0,0,0,0.32);
--moz-box-shadow: 0px 0px 27px 7px rgba(0,0,0,0.32);
+  box-shadow: 0px 0px 27px 20px rgba(0,0,0,0.32);
+-webkit-box-shadow: 0px 0px 27px 20px rgba(0,0,0,0.32);
+-moz-box-shadow: 0px 0px 27px 20px rgba(0,0,0,0.32);
+transform: scale(1.1, 1.1);
+transition: all 2s;
+padding: 0;
+}
+
+.imganimation {
+  width: 100%;
+  padding: 10px;
+  object-fit: cover;
+  height:300px;
 }
 
 .barra_contacto {
