@@ -11,47 +11,50 @@
 </head>
 
 <body>
-    <main>
+    <nav class="navbar navbar-expand-lg navbar-dark px-3">
+        <figure class="nav_logo">
+            <a href="../index.html"><img src="../imagenes/logo.png" alt="logo Apartamentos" width="200px" /></a>
+        </figure>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtoggler-contact"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <nav class="navbar navbar-expand-lg navbar-dark px-3">
-            <figure class="nav_logo">
-                <a href="../index.html"><img src="../imagenes/logo.png" alt="logo Apartamentos" width="200px" /></a>
-            </figure>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navtoggler-contact" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navtoggler">
-                <ul class="nav_menu">
-                    <li>
-                        <a class="item" href="./departamentos.html">Departamentos</a>
-                    </li>
-                    <li>
-                        <a class="item" href="./galeria.html">Galeria</a>
-                    </li>
-                    <li>
-                        <a class="item" href="./contacto.html">Contacto</a>
-                    </li>
-                    <li>
-                        <a class="item" href="./sobrenosotros.html">Sobre nosotros</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <h1>CONTACTO</h1>
-        <div class="barra_contacto">
-            <h3>Consultas por teléfono:</h3>
-            <h4>
-                Jordi: +54 9 3513 11-0419 Santiago: +54 9 3517 55-4663 Joaquin: +54 9
-                3517 57-8620
-            </h4>
-            <h3>Instagram</h3>
-            <img class="instagram" src="../imagenes/ig.png" width="50px" />
+        <div class="collapse navbar-collapse justify-content-end" id="navtoggler-contact">
+            <ul class="nav_menu">
+                <li>
+                    <a class="item" href="./departamentos.html">Departamentos</a>
+                </li>
+                <li>
+                    <a class="item" href="./galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a class="item" href="./contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a class="item" href="./sobrenosotros.html">Sobre nosotros</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <main>
+        <h1>CONTACTO</h1>
+        <div class="container">
+            <div class="barra_contacto">
+                <h3>Consultas por teléfono:</h3>
+                <h4>Jordi: <a href="tel:+5493513110419" title="Llamar"><u>+54 9 3513 11-0419</u></a></h4>
+                <h4>Santiago: <a href="tel:+5493517554663" title="Llamar"><u>+54 9 3517 55-4663</u></a></h4>
+                <h4>Joaquin: <a href="tel:+5493517578620" title="Llamar"><u>+54 9 3517 57-8620</u></a></h4>
+                <h4><a href="https://www.instagram.com/apartamentoscordoba/?hl=es-la" target="_blank">
+                    <img class="instagram" src="../imagenes/ig.png" width="50px" />
+                    : @apartamentoscordoba
+                    </a>
+                </h4>
+            </div>
+        </div>
+
     </main>
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
