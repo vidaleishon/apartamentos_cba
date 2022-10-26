@@ -141,7 +141,7 @@ h2 {
   height: 40px;
   align-items: center;
   font-weight: 900;
-  letter-spacing: 5px;
+  margin: 10px;
 }
 
 h3 {
@@ -181,6 +181,10 @@ article {
   padding: 30px;
   text-align: center;
 
+  }
+
+  .galeria_fotos h2 {
+    letter-spacing: 5px;
   }
 
 .imganimation:hover {
