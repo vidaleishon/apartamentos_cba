@@ -200,7 +200,14 @@ article {
 
 #contacto {
   padding: 10px;
-  display:flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  }
+
+  @media only screen and (max-width: 700px) {
+    #contacto {
+      grid-template-columns: auto;
+    }
   }
 
 .barra_contacto {
@@ -214,26 +221,32 @@ article {
 
 .barra_email {
   margin: 45px;
-  width: 500px, x;
+  width: 400px, x;
   height: 850px, x;
   background: rgba(66, 31, 41, 0.8);
   border-radius: 43px;
-  text-align: center;
 }
 
-.barra_email textarea {
-  width: 200px, x;
-  height:200px, x;
+.input_contact {
+  background: #00000033;
+  border: none;
+  color: white;
+  padding: 4px;
   margin: 10px;
+  border-radius: 10px;
 }
 
-.barra_email input {
-  margin: 10px;
+.input_submit {
+  margin:10px;
+  padding:4px;
+  background-color: #161619;
+  color: #ffffffff;
 }
 
-.barra_email:hover {
 
-  transition: 1s;
+.enviardatos:hover {
+  background-color: #333333c4;
+  transition: all 1s;
 }
 
 
