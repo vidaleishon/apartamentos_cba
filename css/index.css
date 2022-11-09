@@ -147,7 +147,7 @@ h3 {
   height: 30px;
   align-items: center;
   padding: 30px;
-  margin: 30px;
+  margin: 10px;
 }
 
 h4 {
@@ -213,7 +213,6 @@ article {
 }
 
 .barra_email {
-  padding: 45px;
   margin: 45px;
   width: 500px, x;
   height: 850px, x;
@@ -225,6 +224,16 @@ article {
 .barra_email textarea {
   width: 200px, x;
   height:200px, x;
+  margin: 10px;
+}
+
+.barra_email input {
+  margin: 10px;
+}
+
+.barra_email:hover {
+
+  transition: 1s;
 }
 
 
