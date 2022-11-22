@@ -129,6 +129,16 @@ body {
       background: rgba(66, 31, 41, 0.8);
       border-radius: 43px;
       text-align: center; }
+    body .galeria_fotos .barra_email {
+      padding: 30px;
+      margin: auto;
+      width: 600px, x;
+      height: 450px, x;
+      background: rgba(66, 31, 41, 0.8);
+      border-radius: 43px;
+      text-align: center; }
+      body .galeria_fotos .barra_email .nombreyapellido {
+        margin: 10px; }
     body .galeria_fotos .logo-container {
       display: flex;
       justify-content: center;

@@ -1,21 +1,22 @@
 body {
-    background-image: url(../imagenes/rondeau.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: #00000044;
-    background-blend-mode: darken;
-    margin: 0px;
-    height: 100vh;
-    color: white;
-    
-    nav {
-  background: #161619;
-  display: flex;
+  background-image: url(../imagenes/rondeau.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #00000044;
+  background-blend-mode: darken;
+  margin: 0px;
+  height: 100vh;
+  color: white;
 
-  justify-content: space-between;
-  position: fixed !important;
-  width: 100%;
-  z-index: 9999;
+  nav {
+    background: #161619;
+    display: flex;
+
+    justify-content: space-between;
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999;
+  }
 
   .nav_menu {
     list-style-type: none;
@@ -26,41 +27,48 @@ body {
     margin-top: 16px;
     background: #161619;
 
-    .nav_menu li {
-        border-radius: 15px;
-        padding: 3px;
-      }
-    
-      .nav_menu li:hover {
+    li {
+      border-radius: 15px;
+      padding: 3px;
+        &:hover {
         background-color: #333333c4;
         transition: all 1s;
       }
+    }
   }
 
   .nav_logo {
     margin-left: 15px;
     margin-top: 10px;
   }
-
 }
 
-
 main {
+
   padding-top: 120px;
 
   li {
     float: left;
+    a {
+      display: block;
+      text-align: center;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
   }
-  
-  li a {
-    display: block;
-    text-align: center;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-}
 
-a {
+  body {
+    background-image: url(../imagenes/rondeau.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #00000044;
+    background-blend-mode: darken;
+    margin: 0px;
+    height: 100vh;
+    color: white;
+  }
+
+  a {
     color: white;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
@@ -77,12 +85,16 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
+  }
 
-    .barra-txt {
-        font-size: 1.5rem;
-        font-weight: bold;
-        font-family: "Merriweather Sans", sans-serif;
-      }
+  .barra-txt {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Merriweather Sans", sans-serif;
+  }
+
+  .ubicacion {
+    margin-top: 70px;
   }
 
   h1 {
@@ -104,7 +116,7 @@ a {
     font-weight: 900;
     margin: 10px;
   }
-  
+
   h3 {
     display: flex;
     justify-content: center;
@@ -112,14 +124,16 @@ a {
     height: 30px;
     align-items: center;
     padding: 30px;
+    margin: 10px;
   }
-  
-  h4 {
+
+  h5 {
     text-align: center;
     font-family: "Merriweather Sans", sans-serif;
     line-height: 30px;
     display: inline-block;
     margin: 20px;
+    font-weight: 100;
   }
 
   #ubicacion {
@@ -127,19 +141,11 @@ a {
   }
 
   article {
-    margin: auto;
+    margin: 30px;
     width: 900px;
     height: 160px, x;
     background: rgba(66, 31, 41, 0.8);
     border-radius: 43px;
-
-    p {
-        text-align: center;
-        font-family: "Merriweather Sans", sans-serif;
-        line-height: 30px;
-        display: inline-block;
-        margin: 20px;
-      }
   }
 
   .galeria_fotos {
@@ -148,64 +154,120 @@ a {
     border-radius: 43px;
     padding: 30px;
     text-align: center;
-
-    h2 {
+      h2 {
         letter-spacing: 5px;
+      }
+  }
+
+
+  
+  .imganimation {
+    width: 100%;
+    padding: 10px;
+    object-fit: cover;
+    height: 300px;
+
+      &:hover {
+        box-shadow: 0px 0px 27px 20px rgba(0, 0, 0, 0.32);
+        -webkit-box-shadow: 0px 0px 27px 20px rgba(0, 0, 0, 0.32);
+        -moz-box-shadow: 0px 0px 27px 20px rgba(0, 0, 0, 0.32);
+        transform: scale(1.1, 1.1);
+        transition: all 2s;
+        padding: 0;
+      }
+  }
+
+  
+  
+  #contacto {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+    }
+    
+    .barra_contacto {
+      width: 400px, x;
+      height: 850px, x;
+      background: rgba(66, 31, 41, 0.8);
+      border-radius: 43px;
+      text-align: center;
     }
 
-    .imganimation {
-        width: 100%;
-        padding: 10px;
-        object-fit: cover;
-        height: 300px;
+  .barra_email {
+    width: 400px, x;
+    height: 850px, x;
+    background: rgba(66, 31, 41, 0.8);
+    border-radius: 43px;
+  }
+  
+  .input_contact {
+    background: #00000033;
+    border: none;
+    color: white;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .input_submit {
+    margin: 10px;
+    padding: 4px;
+    background-color: #161619;
+    color: #ffffffff;
+  }
+  
+  .enviardatos:hover {
+    background-color: #333333c4;
+    transition: all 1s;
+  }
+  
+  p {
+    text-align: center;
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 30px;
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 45px 0;
+  }
+  
+  .logo {
+    width: 50%;
+  }
+  
+  @media (max-width: 700px) {
+    .barra-txt {
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    .barra-container {
+      width: 100%;
+    }
+    
+    .logo {
+      width: 100%;
+    }
+  }
 
-        .imganimation:hover {
-            box-shadow: 0px 0px 27px 20px rgba(0, 0, 0, 0.32);
-            -webkit-box-shadow: 0px 0px 27px 20px rgba(0, 0, 0, 0.32);
-            -moz-box-shadow: 0px 0px 27px 20px rgba(0, 0, 0, 0.32);
-            transform: scale(1.1, 1.1);
-            transition: all 2s;
-            padding: 0;
-          }
-      }
-
-      .barra_contacto {
-        margin: auto;
-        width: 600px, x;
-        height: 450px, x;
-        background: rgba(66, 31, 41, 0.8);
-        border-radius: 43px;
-        text-align: center;
-      }   
-
-      .barra_email {
-        padding: 30px;
-        margin: auto;
-        width: 600px, x;
-        height: 450px, x;
-        background: rgba(66, 31, 41, 0.8);
-        border-radius: 43px;
-        text-align: center;
-
-        .nombreyapellido {
-          margin: 10px;
-        }
-
-      }
-
-      .logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 45px 0;
-      
-        .logo {
-          width: 50%;
-        }
-        
-        }
-      
-}
-
+  @media screen and (max-width: 700px) {
+    h3 {
+      text-align: center;
+    }
+    
+    .barra_email {
+      width: 340px;
+    }
+    
+    #contacto {
+      grid-template-columns: auto;
+    }
+  }
 }
