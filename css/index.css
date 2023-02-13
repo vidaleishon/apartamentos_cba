@@ -189,6 +189,13 @@ article {
   height: 160px, x;
   background: rgba(66, 31, 41, 0.8);
   border-radius: 43px;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid_img {
+  width:300px;
+  margin: 30px;
 }
 
 .galeria_fotos {
@@ -243,11 +250,12 @@ article {
 }
 
 .barra_contacto {
-  width: 400px, x;
+  width: 900px, x;
   height: 850px, x;
   background: rgba(66, 31, 41, 0.8);
   border-radius: 43px;
   text-align: center;
+  align-content: center;
 }
 
 .barra_email {
@@ -273,18 +281,25 @@ article {
   color: #ffffffff;
 }
 
-
 .enviardatos:hover {
   background-color: #333333c4;
   transition: all 1s;
 }
-
 
 p {
   text-align: center;
   font-family: "Merriweather Sans", sans-serif;
   line-height: 30px;
   display: inline-block;
+  margin: 20px;
+}
+
+.grid_p {
+  font-family: "Merriweather Sans", sans-serif;
+  line-height: 40px;
+  display:inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
   margin: 20px;
 }
 
